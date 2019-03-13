@@ -1,3 +1,13 @@
+/*
+ *@author: Paul Larkin
+ *@date: 13/03/2019
+ *@name: Queue
+ *
+ * @description: A java implementation
+ * of a Queue Data Structure
+ *
+ */
+
 public class Queue {
 
     private int maxSize;//To set the max size available
