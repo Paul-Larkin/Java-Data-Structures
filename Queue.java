@@ -1,7 +1,7 @@
 /*
- *@author: Paul Larkin
- *@date: 13/03/2019
- *@name: Queue
+ * @author: Paul Larkin
+ * @date: 13/03/2019
+ * @name: Queue
  *
  * @description: A java implementation
  * of a Queue Data Structure
