@@ -168,7 +168,7 @@ public class Lab5Hangman {
             System.out.println("                 ||          _|_");
             System.out.println("                 ||         /   \\");
             System.out.println("                 ||        ( o o )");
-            System.out.println("                 ||         \\_¬_/");
+            System.out.println("                 ||         \\_x_/");
             System.out.println("                 ||");
             System.out.println("                 ||");
             System.out.println("                 ||");
@@ -184,7 +184,7 @@ public class Lab5Hangman {
             System.out.println("                 ||          _|_");
             System.out.println("                 ||         /   \\");
             System.out.println("                 ||        ( o o )");
-            System.out.println("                 ||         \\_¬_/");
+            System.out.println("                 ||         \\_x_/");
             System.out.println("                 ||           |");
             System.out.println("                 ||           |");
             System.out.println("                 ||");
@@ -201,7 +201,7 @@ public class Lab5Hangman {
             System.out.println("                 ||          _|_ ");
             System.out.println("                 ||         /   \\");
             System.out.println("                 ||        ( o o )");
-            System.out.println("                 ||         \\_¬_/");
+            System.out.println("                 ||         \\_x_/");
             System.out.println("                 ||           |");
             System.out.println("                 ||           |");
             System.out.println("                 ||          / \\ ");
