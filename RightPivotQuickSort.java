@@ -1,6 +1,13 @@
 package algorithms;
 
-public class MyQuickSort{
+/*
+ * @author: Paul Larkin
+ * @date: 05/05/2019
+ * @name: RightPivotQuickSort
+ *
+ */
+
+public class RightPivotQuickSort{
 	
 	private int array[];
 	private int length;
@@ -54,7 +61,7 @@ public class MyQuickSort{
 			}
 		}
 		
-	//Run the recursive calls on the new smaller areas
+	//Run the recursive calls on the new smaller areas, left side first
 	quickSort(array, left, rightPointer);
 	quickSort(array, leftPointer+1, right);
     }
