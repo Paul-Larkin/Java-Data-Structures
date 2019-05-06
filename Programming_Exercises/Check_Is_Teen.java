@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 /*
  * @author: Paul Larkin
- * @date: 14/02/2019
+ * @date: 06/05/2019
  * @description: Java book exercise.
  * 
  * @details: Write a program that 
- * contains a method tha takes in
+ * contains a method that takes in
  * an age and prints out if the age 
  * corresponds to that of a teenager.
  */
