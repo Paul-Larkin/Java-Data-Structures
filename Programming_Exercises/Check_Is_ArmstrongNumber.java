@@ -38,7 +38,6 @@ public class Check_Is_ArmstrongNumber {
 		userInput.close();
 		
 		checkIsArmstrong(number);
-
 	}
 	
 	public static void checkIsArmstrong(int number) {
@@ -59,5 +58,4 @@ public class Check_Is_ArmstrongNumber {
 			System.out.print("Fale: "+originalNumber+" is Not an Armstrong Number");
 		}
 	}
-
 }

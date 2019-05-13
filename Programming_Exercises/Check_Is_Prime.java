@@ -53,9 +53,6 @@ public class Check_Is_Prime {
 			System.out.println("True: "+number+" is an Prime Number");
 		}else {
 			System.out.println("False: "+number+" is NOT an Prime Number");
-		}
-		
-		
+		}	
 	}
-
 }
