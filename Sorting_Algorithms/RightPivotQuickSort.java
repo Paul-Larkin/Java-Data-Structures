@@ -19,12 +19,14 @@ public class RightPivotQuickSort{
 	}
     
     private void quickSort(int array[], int left, int right){
-    	//base case
+    	
+        //The essential variables
     	int pivot = right, rightPointer = right-1, leftPointer = left;
+
+        //base case
 		if(left >= right) {
 			return;
 		}
-		//The essential variables
 		
 		//This situation never occurs
 		while(leftPointer < pivot && rightPointer >= 0){
@@ -73,13 +75,13 @@ public class RightPivotQuickSort{
 	}
     //Print array method
     private void printArray(int array[]) {
-    	//System.out.println(Arrays.toString(array));
+    	
     	for(int x=0;x<array.length;x++) {
         	System.out.print(array[x]+", ");
     	}
     	System.out.println("");
     }
-    
+    //Generate random array method
 	private void generateRandom(int array[]) {
 		
 		for(int i=0; i<array.length; i++) {
