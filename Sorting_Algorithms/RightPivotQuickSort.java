@@ -1,5 +1,3 @@
-package algorithms;
-
 /*
  * @author: Paul Larkin
  * @date: 05/05/2019
@@ -37,10 +35,11 @@ public class RightPivotQuickSort{
 					swap(array, leftPointer, pivot);
 					break;
 				}
+				/*
 				if((array[leftPointer+1] > array[pivot])) {
 					swap(array, leftPointer, pivot);
 					break;
-				}
+				}*/
 			}
 			//If the the pointer are either larger/smaller respectivly then swap them
 			if((array[leftPointer] > array[pivot]) && (array[rightPointer] < array[pivot])){
@@ -94,7 +93,7 @@ public class RightPivotQuickSort{
         
         int[] myarray = new int[500];
         
-        MyQuickSort obj = new MyQuickSort();
+        RightPivotQuickSort obj = new RightPivotQuickSort();
         
         obj.generateRandom(myarray);
         obj.array = myarray;
