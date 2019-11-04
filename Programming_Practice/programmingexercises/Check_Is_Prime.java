@@ -1,4 +1,4 @@
-package algorithms;
+package programmingexercises;
 
 import java.util.Scanner;
 
@@ -43,9 +43,10 @@ public class Check_Is_Prime {
 		boolean isPrime = true;
 		
 		for(int i = 2; i < Math.sqrt(number); i++) {
-			
-			if(number%i == 0) {
+
+			if (number % i == 0) {
 				isPrime = false;
+				break;
 			}
 		}
 			

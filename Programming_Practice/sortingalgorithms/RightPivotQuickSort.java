@@ -1,3 +1,5 @@
+package sortingalgorithms;
+
 /*
  * @author: Paul Larkin
  * @date: 05/05/2019
@@ -7,19 +9,18 @@
 
 public class RightPivotQuickSort{
 	
-	private int array[];
-	private int length;
+	private int[] array;
 	
-	public void quickSort(int inputArray[]) {
+	private void quickSort(int[] inputArray) {
 		array = inputArray;
-		length = inputArray.length;
+		int length = inputArray.length;
 		quickSort(array, 0, length-1);
 	}
     
-    private void quickSort(int array[], int left, int right){
+    private void quickSort(int[] array, int left, int right){
     	
         //The essential variables
-    	int pivot = right, rightPointer = right-1, leftPointer = left;
+    	int rightPointer = right-1, leftPointer = left;
 
         //base case
 		if(left >= right) {
@@ -27,12 +28,12 @@ public class RightPivotQuickSort{
 		}
 		
 		//This situation never occurs
-		while(leftPointer < pivot && rightPointer >= 0){
+		while(leftPointer < right && rightPointer >= 0){
 			//If the pointers cross paths swap left side with pivot....if it is bigger
 			if(leftPointer >= rightPointer){
 				//Only if the arr[leftpointer] is bigger than the arr[pivot]
-				if((array[leftPointer] > array[pivot])) {
-					swap(array, leftPointer, pivot);
+				if((array[leftPointer] > array[right])) {
+					swap(array, leftPointer, right);
 					break;
 				}
 				/*
@@ -42,17 +43,17 @@ public class RightPivotQuickSort{
 				}*/
 			}
 			//If the the pointer are either larger/smaller respectivly then swap them
-			if((array[leftPointer] > array[pivot]) && (array[rightPointer] < array[pivot])){
+			if((array[leftPointer] > array[right]) && (array[rightPointer] < array[right])){
 				swap(array, leftPointer, rightPointer);
 				leftPointer++;
 				rightPointer--;
 			}
 			//Else if only the left is bigger, decrement right
-			else if(array[leftPointer] > array[pivot]) {
+			else if(array[leftPointer] > array[right]) {
 				rightPointer--;
 			}
 			//Else if only the right is smaller, increment left
-			else if(array[rightPointer] < array[pivot]) {
+			else if(array[rightPointer] < array[right]) {
 				leftPointer++;
 			}
 			//Else increment and decrement
@@ -67,21 +68,21 @@ public class RightPivotQuickSort{
 	quickSort(array, leftPointer+1, right);
     }
     //Swap method
-    private void swap(int array[], int one, int two){
+    private void swap(int[] array, int one, int two){
 		int temp = array[one];
 		array[one] = array[two];
 		array[two] = temp;
 	}
     //Print array method
-    private void printArray(int array[]) {
+    private void printArray(int[] array) {
     	
-    	for(int x=0;x<array.length;x++) {
-        	System.out.print(array[x]+", ");
+    	for(int x: array) {
+        	System.out.print(x+", ");
     	}
-    	System.out.println("");
+    	System.out.println();
     }
     //Generate random array method
-	private void generateRandom(int array[]) {
+	private void generateRandom(int[] array) {
 		
 		for(int i=0; i<array.length; i++) {
 			int random = (int) (Math.random()*1000);

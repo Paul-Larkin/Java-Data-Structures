@@ -1,10 +1,10 @@
-/*
+package datastructures;/*
  * @author: Paul Larkin
  * @date: 13/03/2019
- * @name: Queue
+ * @name: datastructures.Queue
  *
  * @description: A java implementation
- * of a Queue Data Structure
+ * of a datastructures.Queue Data Structure
  *
  */
 
@@ -16,7 +16,7 @@ public class Queue {
     private int[] queueArray;//Array[] integer to create structure
     public int nItems;//Holds number of items
 
-    Queue(int size){//Queue constructor
+    Queue(int size){//datastructures.Queue constructor
         maxSize=size;//Takes size from the input
         queueArray = new int [maxSize];//The previous array now has a size
         front=0;//Front starts at 0

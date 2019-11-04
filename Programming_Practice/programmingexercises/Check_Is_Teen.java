@@ -1,4 +1,4 @@
-package algorithms;
+package programmingexercises;
 
 import java.util.Scanner;
 

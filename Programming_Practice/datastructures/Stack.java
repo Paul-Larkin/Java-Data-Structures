@@ -1,4 +1,4 @@
-/*
+package datastructures;/*
  * @author: Paul Larkin
  * @date: 18/03/2019
  * @name: Stack
@@ -27,7 +27,7 @@ public class Stack {
 
     //Check the status of the stack
     public boolean isEmpty() {
-        return (top==-1); //True is empty
+        return (top == -1); //True is empty
     }
 
     //Push element into the stack

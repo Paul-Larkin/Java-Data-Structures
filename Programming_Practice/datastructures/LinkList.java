@@ -1,4 +1,4 @@
-package algorithms;
+package datastructures;
 
 public class LinkList {
 
@@ -39,7 +39,7 @@ public class LinkList {
 	}
 	
 	void append(int data) {
-		Node append = new Node (data);
+		Node append = new Node(data);
 		
 		if(head==null) {
 			head = append;
@@ -54,7 +54,7 @@ public class LinkList {
 	}
 	
 	public void prepend(int data) {
-		Node prepend = new Node(data);	
+		Node prepend = new Node(data);
 			prepend.next = head;
 			head = prepend;
 	}
@@ -108,12 +108,11 @@ public class LinkList {
 				current=current.next;
 			}
 			current.next.next=current.next;
-			current.next=current.next.next;
 			current.next.next=null;
 		}
 	}
 	
-	class Node{
+	static class Node{
 		int data;
 		Node next;
 		

@@ -1,4 +1,4 @@
-package algorithms;
+package programmingexercises;
 
 import java.util.Scanner;
 
@@ -22,9 +22,8 @@ public class Check_Is_ArmstrongNumber {
 	public static void main(String[] args) {
 		
 		Scanner userInput = new Scanner (System.in);
-		
 		System.out.println("Please enter a number");
-		
+
 		int number = 0;
 				
 		if(userInput.hasNextInt()) {
@@ -36,7 +35,6 @@ public class Check_Is_ArmstrongNumber {
 		}
 		
 		userInput.close();
-		
 		checkIsArmstrong(number);
 	}
 	
@@ -46,7 +44,6 @@ public class Check_Is_ArmstrongNumber {
 		int originalNumber = number;
 		
 		while (number!=0) {
-			
 			int modRemainder = number%10;
 			result += (modRemainder*modRemainder*modRemainder);
 			number /= 10;
@@ -54,7 +51,8 @@ public class Check_Is_ArmstrongNumber {
 		
 		if(originalNumber == result) {
 			System.out.print("True: "+originalNumber+" is an Armstrong Number");
-		}else {
+		}
+		else {
 			System.out.print("Fale: "+originalNumber+" is Not an Armstrong Number");
 		}
 	}
